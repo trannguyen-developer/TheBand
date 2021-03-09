@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clear{
+    clear: both;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+/* coman */
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding: 0px 8px;
+
+}
+.col-w-2{
+    width: 50%;
+}
+
+.col-w-3{
+    width: 33.33333%;
+}
+
+
+
+#header{
+    height: 46px;
+    background: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+}
+.nav{
+    float: left;
+}
+.nav  ul{
+    list-style-type: none;
+
+}
+
+.nav > ul >li{
+    display: inline-table;
+}
+
+.nav > ul >li a{
+    display: inline-block;
+    height: 46px;
+    text-decoration: none;
+    color: white;
+    padding: 0 24px;
+    line-height: 46px;
+
+}
+
+.nav li:hover > a   {
+    color: black;
+    background: #ccc;
+
+}
+.nav .subnav{
+    background: white;
+    display: none;
+    box-shadow: 0 0 14px rgb(177, 174, 174) ;
+}
+.nav .subnav li a{
+    padding-left: 16px;
+    color: black;
+    display: inline-block;
+    width: 180px;
+    height:  38px;
+    line-height: 38px;
+}
+
+.nav li:hover .subnav{
+    display: block;
+
+}
+
+.mobile-menu-btn{
+    display: none;
+}
+
+.inf-icon{
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+}
+
+.mobile-menu-btn,
+#search{
+    cursor: pointer;
+    color: white;
+    width: 65px;
+    height: 46px;
+    float: right;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 12px;
+}
+.mobile-menu-btn,
+#search a{
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-menu-btn:hover{
+    background: #ccc;
+    color: #000;
+}
+#search:hover{
+    background-color: #f44336;
+}
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(../img/banner1.jpg) top center  no-repeat;
+    background-size: 100%;
+} 
+
+#slider .text-content{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+#slider .text-heading{
+    font-weight: 540;
+    
+}
+
+#slider .text-p{
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.content-session{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:64px 16px;
+    overflow: hidden;
+}
+.about{
+    line-height: 22.5px;
+    overflow: hidden;
+}
+.about h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 350;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 45px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    letter-spacing: 4px;
+}
+
+.about .slogan{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 15px;
+    font-style:italic;
+    opacity: 0.6;
+}
+.about .text-content{
+    margin: 15px 0;
+    text-align: justify;
+}
+.about .team{
+    padding: 32px 0;
+    overflow: hidden;
+}
+.about .team .member{
+    text-align: center;
+}
+ 
+.about .team .member p{
+    margin: 15px 0;
+    
+} 
+.about .team .member img{
+    width: 154px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+} 
+
+.tour{
+    font-size: 15px;
+    background: black;
+    text-align: center;
+    line-height: 22.5px;
+}
+.tour .content-session{
+    overflow: hidden;
+}
+.tour .text-content h2{
+    color: white;
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 400px;
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+.tour .text-content p{
+    color: white;
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+.tour ul{
+    margin-top: 30px;
+    width: 100%;
+    background: white;
+    list-style-type: none;
+    border: 1px solid black;
+}
+.tour ul li{
+    text-align: left;
+    padding:8px 16px;
+    color: rgb(117, 117, 117);
+    border-bottom: 1px solid rgb(221,221,221);
+}
+.list-ticket .sold-out{
+    background-color: rgb(244, 67, 54);
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.list-ticket .quantity{
+    text-align: center;
+    float: right;
+    color: white;
+    background: black;
+    line-height: 26px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.tour .place{
+    background: black;
+    padding: 32px 0;
+
+}
+.tour .place-show{
+    margin-bottom: 10px;
+    background: black;
+    
+}
+
+.place-show img{
+    display: block;
+    width: 100%;
+}
+.place-show img:hover{
+    opacity: 0.6;
+}
+
+.tour .text-content-place{
+    text-align: left;
+    padding: 0 16px;
+    padding-bottom: 16px;
+    background-color: #fff;
+    padding-top: 1px;
+}
+
+.tour .text-content-place h4{
+    margin: 15px 0;
+}
+
+.tour .text-content-place .time{
+    margin: 15px 0;
+    opacity: 0.6;
+
+}
+
+.tour .text-content-place .content{
+    margin: 15px 0;
+}
+
+.tour .text-content-place button{
+    padding: 8px 16px;
+    background: black;
+    color: white;
+    border: none;
+    font-weight: 400px;
+    font-size: 15px;
+}
+.tour .text-content-place button:hover{
+    background: #ccc;
+    color: black;
+}
+
+.contact .heading{
+    text-align: center;
+    line-height: 45px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 30px;
+    margin: 10px 0;
+}
+.contact .note{
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+.contact .inf{
+    padding: 32px 0;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.inf .thong-tin img{
+    width: 18px;
+    margin-right: 15px;
+}
+.mes input,
+.name-mail input{
+    border: 1px #ccc solid;
+    line-height: 22px;
+}
+
+
+.name input,.mail input{
+    width: 100%;
+    padding: 8px;
+}
+
+
+.mes input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+}
+.send{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 11px 16px;
+    float: right;
+    margin: 16px 0;
+    background: black;
+    color: white;
+    border: none;
+}
+
+.send:hover{
+    color: black;
+    background: #ccc;
+}
+button{
+    cursor: pointer;
+}
+
+.map img{
+    display: block;
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    background: #f1f1f1;
+}
+#footer .icon-inf{
+    margin: 15px 0;
+}
+#footer .icon-inf i{
+    font-size: 20px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+#footer .icon-inf a{
+    text-decoration: none;
+    color: black;
+}
+#footer .icon-inf i:hover{
+    opacity: 0.5;
+}
+#footer p{
+    margin: 25px 0;
+    font-size: 15px;
+    opacity: 0.6;
+}
+#footer p a{
+    color: black;
+}

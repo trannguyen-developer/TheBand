@@ -1,0 +1,98 @@
+/* Mobile & tablet */
+@media (max-width: 1023px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+
+    .btn{
+        height: 42px;
+        padding: 15px 16px;
+        width: 100%;
+    }
+    #footer .icon-inf a{
+        display: inline-block;
+        margin-right: 12px;
+    }
+    #footer .icon-inf i{
+        font-size: 34px;
+    }
+
+}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width:739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    #header .nav ul li{
+        display: block;
+    }
+
+    #header .nav {
+        width: 100%;
+        display: block;
+    }
+
+    #header .nav a{
+        display: block;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+    #search{
+        display: none;
+    }
+    .mobile-menu-btn{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #header .nav ul >li:first-child{
+        display: inline-block;
+    }
+    
+    .nav .subnav{
+        background: #333;
+    }
+
+    .nav .subnav li a{
+        padding: 5px 41px;
+        color: #fff;
+    }
+    #slider .text-content{
+        top: 65%;
+        font-size: 12px;
+    }
+    
+    .row{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .thong-tin{
+        font-size: 14px;
+        margin: 16px 0;
+    }
+    .name-mail{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .name{
+        margin-bottom: 10px;
+    }
+    .buy-ticket{
+        width: 100%;
+    }
+    .col-full{
+        width: 100%;
+    }
+}
